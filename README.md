@@ -1,5 +1,7 @@
 # Event Ticket Exercise
 
+[![Build Status](https://travis-ci.org/CA-bootcamp-s19/event-tickets-exercise-santteegt.svg?branch=master)](https://travis-ci.org/CA-bootcamp-s19/event-tickets-exercise-santteegt)
+
 This directory is a [truffle project](https://truffleframework.com/docs/truffle/overview) that contains the required contract, migration and test files. In this exercise you are going to implement the EventTickets.sol and EventTicketsV2.sol contracts.
 
 The contract files contain a framework and comments to help you implement the contract. We have written a set of tests (in javascript) to determine if you implement the contract correctly. As an additional challenge, [try writing some Solidity tests](https://truffleframework.com/docs/truffle/testing/writing-tests-in-solidity) in TestEventTicket.sol.
@@ -32,7 +34,7 @@ If your tests do not pass, modify the contract, recompile, redeploy and retest. 
 - Create state variables
 - Use a constructor to define the description, the URL, the ticketsAvailable and set isOpen to true.
 - Create a readEvent function that returns the description, the URL, tickets, sales and isOpen.
-- Create a buyTicket function that checks that isOpen is true, the amount sent is greater or equal to the number of tickets x price of the tickets and that the tickets are in stock. 
+- Create a buyTicket function that checks that isOpen is true, the amount sent is greater or equal to the number of tickets x price of the tickets and that the tickets are in stock.
   - allocate the number of tickets to the buyer
   - add the number of tickets to the total sales
   - calculate if any payment change is required and if so, send the change back to the sender
